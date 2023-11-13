@@ -1,0 +1,58 @@
+<div class="d-flex grid gap-5 flex-wrap p-3 mb-0 fond" style="margin: 0;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="bg-success-subtle p-3 rounded">
+          <h2 class="text-center">MALADIES</h2>
+          <p class="description">La catégorie “Maladies” correspond aux solutions radicales, pour les personnes qui
+            aiment que le travail soit bien fait tout en faisant souffrir leur cible. Vous pourrez renvoyer l'ascenseur
+            à ceux qui vous ont été pénibles en leur offrant une agonie méritée. Avec les produits de cette catégorie,
+            vous apprendrez à apprécier le malheur des autres.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Boucle pour afficher les cartes -->
+  <div class="card ml-1" style="width: 25rem;" *ngFor="let elt of maladies">
+    <img src="/assets{{elt.image}}" class="card-img-top">
+    <div class="card-body rouge_fonce d-flex flex-column text-center">
+      <!-- Utilisation de text-center pour centrer le contenu -->
+      <h5 class="card-title carte">{{elt.titre}}</h5>
+      <p class="card-text carte">{{elt.contenu}}</p>
+      <h2 class="price" data-price="">{{elt.prix | number}} XPF</h2>
+
+      <!-- Bouton pop-up "Voir +" qui donne plus d'informations -->
+      <div class="d-flex justify-content-between mt-auto">
+        <button type="button" class="btn" data-bs-toggle="modal" style="background-color: #e8b4ae; color:#222222;"
+          data-bs-target="#modalId" (click)="openModal(elt)">Voir +</button>
+        <a href="#" class="btn add-to-card rounded-5 col-6" style="background-color: #e8b4ae; color:#222222;"
+          data-id="">Ajouter au panier</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Modal pop up -->
+  <div class="modal fade rouge_fonce" id="modalId" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle">{{selectedItem?.titre}}</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body carte-popup">
+          <img src="/assets{{selectedItem?.image}}" class="card-img-top" style="width: 70%;"><br />
+          <p>{{selectedItem?.contenu}}</p>
+          <h2 class="price" data-price="">{{selectedItem?.prix | number}} XPF</h2>
+          <a href="#" class="btn add-to-card rounded-5 col-6" style="background-color: #35755e; color:#ffffff;"
+            data-id="">Ajouter au panier</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex align-items-end">
+    <a href="/maladies" class="btn bg-danger-subtle square border border-danger">↑</a>
+  </div>
+</div>

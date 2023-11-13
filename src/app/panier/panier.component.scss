@@ -1,0 +1,108 @@
+/************* panier ****************/
+table {
+    border : collapse;
+    width : 100%;
+    margin-top: 1px;
+}
+table tr:nth-child(odd) {
+    background-color: #efeefb;
+}
+  
+table tr:nth-child(even) {
+    background-color: #ffffff;
+}
+.titre{
+    font-size: large;
+}
+.qnt{
+    width: 10%;
+}
+/************* fin panier ****************/
+/**** Boutons *****/
+/* Bouton me deconnecter */
+.button-11 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    border-radius: 6px;
+    color: #3D3D3D;
+    background: #fff;
+    border: none;
+    box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  .button-11:focus {
+    box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+    outline: 0;
+  }
+  /* fin Bouton me deconnecter */
+  
+  /* bouton Backoffice */
+  .button-38 {
+    background-color: #e8b4ae;
+    border: 0;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #111827;
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: .75rem 1rem;
+    text-align: center;
+    text-decoration: none #e8b4ae solid;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  .button-38:hover {
+    background-color: #e8b4ae;
+  }
+  .button-38:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+  }
+  .button-38:focus-visible {
+    box-shadow: none;
+  }
+  .button-1{
+      height: 28px;
+      background-color: #F8F8F8;
+      border-radius: 3px;
+      border-color: #E8E8E8;
+      transform: translateY(7px);
+  }
+  /* fin bouton Backoffice */
+  /************************* fin Boutons ********************/
+  /******************************* Couleur ****************/
+.rouge_fonce {
+    background: rgba(194, 41, 51, .7);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.rouge_clair {
+    background-color: #e8b4ae;
+}
+
+.rouge_moyen {
+    background-color: #db6954;
+}
+
+.teal_fonce {
+    background-color: #2b9469;
+}
+
+.teal_clair {
+    background-color: #b5ead6;
+    color: #b5ead6;
+}
+.vert{
+    background-color: #2b9469;
+    color: white;   
+}
+/***************************** fin Couleur ***************/

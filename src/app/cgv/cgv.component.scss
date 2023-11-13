@@ -1,0 +1,23 @@
+/************** Mentions légales *******/
+.cgv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cgv_contenu{
+    background-color: #35755e;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+}
+.ML{
+    background: linear-gradient(120deg,#db6954 0%,#2b9469 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0.5%;
+    padding-top: 1%;
+}
+/************** fin Mentions légales *******/
